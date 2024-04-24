@@ -36,7 +36,6 @@ public class ConsoleView {
 
         System.out.print("출생년도(YYYY):");
         String birth = scanner.nextLine();
-        scanner.nextLine(); // Client the newline character left by nextInt()
         return new PetClient(phone,ornername,petname,address,petkind,birth);
     }
 

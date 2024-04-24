@@ -43,10 +43,10 @@ public class PetClientController {
     public boolean isPhoneExist(String phone) {
         for (PetClient petClient : petClients) {
             if (petClient.getPhone().equals(phone)) {
-                return true;
+                return true; // 중복
             }
         }
-        return false;
+        return false; // 중복x
     }
 }
 
